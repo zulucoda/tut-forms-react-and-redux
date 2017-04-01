@@ -4,7 +4,9 @@
   "description": "learning how to work with forms using React and Redux",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --progress --colors --watch --config ./build.config.js",
+    "build": "webpack --config ./build.config.js"
   },
   "author": "Muzikayise Flynn Buthelezi (zuluCoda)",
   "license": "ISC",
@@ -14,5 +16,9 @@
     "babel-preset-react": "^6.23.0",
     "path": "^0.12.7",
     "webpack": "^1.14.0"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   }
 }
