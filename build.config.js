@@ -1,7 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 
-module.expots = {
+module.exports = {
 
 	context: __dirname, //current folder for ref to other parts
 	entry: {
@@ -15,12 +15,14 @@ module.expots = {
 	
 	module: {
 		loaders: [
+		{
 			test: /\.js?$/,
 			exclude: /node_modules/,
 			loader: 'babel',
 			query: {
 				presets: ['react', 'es2015']
 			}
+		}
 		]
 	}
 
